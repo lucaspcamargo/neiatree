@@ -1,21 +1,20 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2015-06-12T11:37:28
+# Project created by QtCreator 2015-06-12T11:39:42
 #
 #-------------------------------------------------
 
-QT       += widgets
+QT       += core gui
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = neiatree
-TEMPLATE = lib
+TEMPLATE = app
 
-DEFINES += NEIATREE_LIBRARY
 
-SOURCES +=
+SOURCES += src/main.cpp\
+        src/ntreemain.cpp
 
-HEADERS +=
+HEADERS  += src/ntreemain.h
 
-unix {
-    target.path = /usr/lib
-    INSTALLS += target
-}
+FORMS    += src/ntreemain.ui
