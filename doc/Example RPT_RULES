@@ -1,0 +1,34 @@
+"@@@TXC_DXT1_FAST" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc1 -fast %1 %2> outputReplace<.tga=.dds>
+
+"@@@TXC_DXT1" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc1 -fast %1 %2> outputReplace<.tga=.dds>
+
+"@@@TXC_DXT1_GOOD" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc1 %1 %2> outputReplace<.tga=.dds>
+
+"@@@TXC_DXT3" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc2 -fast %1 %2> outputReplace<.tga=.dds>
+
+"@@@TXC_DXT5" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc3 -fast %1 %2> outputReplace<.tga=.dds>
+
+"@@@TXC_NORMALMAP" EXTERNAL_PROCESS exec<nvcompress> arguments<-bc1 -normal %1 %2> outputReplace<.tga=.dds>
+
+
+
+
+
+"@@@S2TC_DXT1_FAST" EXTERNAL_PROCESS exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT1 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_DXT1" EXTERNAL_PROCESS env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT1 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_DXT1_GOOD" EXTERNAL_PROCESS env<S2TC_RANDOM_COLORS=64> env<S2TC_REFINE_COLORS=LOOP> env<S2TC_DITHER_MODE=FLOYDSTEINBERG> env<S2TC_COLORDIST_MODE=SRGB_MIXED> env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT1 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_DXT3_GOOD" EXTERNAL_PROCESS env<S2TC_RANDOM_COLORS=64> env<S2TC_REFINE_COLORS=LOOP> env<S2TC_DITHER_MODE=FLOYDSTEINBERG> env<S2TC_COLORDIST_MODE=SRGB_MIXED> env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT3 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_DXT5_GOOD" EXTERNAL_PROCESS env<S2TC_RANDOM_COLORS=64> env<S2TC_REFINE_COLORS=LOOP> env<S2TC_DITHER_MODE=FLOYDSTEINBERG> env<S2TC_COLORDIST_MODE=SRGB_MIXED> env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT5 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_NORMALMAP" EXTERNAL_PROCESS env<S2TC_COLORDIST_MODE=NORMALMAP> env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT1 -i %1 -o %2> outputReplace<.tga=.dds>
+
+"@@@S2TC_NORMALMAP_GOOD" EXTERNAL_PROCESS env<S2TC_RANDOM_COLORS=64> env<S2TC_REFINE_COLORS=LOOP> env<S2TC_DITHER_MODE=FLOYDSTEINBERG> env<S2TC_COLORDIST_MODE=NORMALMAP> env<LD_LIBRARY_PATH=/home/lucas/Dev/s2tc/.libs> exec</home/lucas/Dev/s2tc/s2tc_compress> arguments<-t DXT1 -i %1 -o %2> outputReplace<.tga=.dds>
+
+
+
+"(3DSound)|(CommonMedia)|(SE)|(_NEIA_INTERNAL)" PROCESS_DIR
+W "*.*" COPY
