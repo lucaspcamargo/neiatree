@@ -35,8 +35,11 @@ void nRPTDialog::updateCheckBox(int check, int state)
 {
     QCheckBox * box = (check == 1 ? ui->progress1: check == 2 ? ui->progress2: check == 3 ? ui->progress3: check == 4 ? ui->progress4: 0 );
     if(box)
+    {
         if(state==0)
+        {
             box->setEnabled(true);
+        }
         else if(state==1)
         {
             box->setCheckable(true);
@@ -47,6 +50,7 @@ void nRPTDialog::updateCheckBox(int check, int state)
             box->setCheckable(false);
             box->setEnabled(false);
         }
+    }
 }
 
 void nRPTDialog::appendOutput(QString output)
@@ -80,6 +84,8 @@ void nRPTDialog::doStuff()
 
 void nRPTDialog::timerEvent(QTimerEvent * evt)
 {
+    Q_UNUSED(evt)
+
     killTimer(m_autoTimerId);
     doStuff();
 
