@@ -7,10 +7,10 @@ TEMPLATE = app
 
 
 SOURCES += src/main.cpp \
-    src/nResourceProcessorTool.cpp \
+    src/ntree.cpp \
     src/nRPTDialog.cpp \
     src/nRPTRulesFile.cpp \
-    src/nRPTTaskLIst.cpp \
+    src/nRPTTaskList.cpp \
     src/nRPTTaskWorker.cpp \
     src/nRPTWorker.cpp
 
@@ -18,10 +18,10 @@ FORMS += \
     src/nRPTDialog.ui
 
 HEADERS += \
-    src/nResourceProcessorTool.h \
+    src/ntree.h \
     src/nRPTDialog.h \
     src/nRPTRulesFile.h \
     src/nRPTTask.h \
-    src/nRPTTaskLIst.h \
+    src/nRPTTaskList.h \
     src/nRPTTaskWorker.h \
     src/nRPTWorker.h

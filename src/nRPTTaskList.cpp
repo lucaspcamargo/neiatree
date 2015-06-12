@@ -1,4 +1,4 @@
-#include "nRPTTaskLIst.h"
+#include "nRPTTaskList.h"
 
 nRPTTaskList::nRPTTaskList(QObject *parent) :
     QObject(parent)

@@ -6,7 +6,7 @@
 #include <QSet>
 #include "nRPTRulesFile.h"
 #include "nRPTTask.h"
-#include "nRPTTaskLIst.h"
+#include "nRPTTaskList.h"
 
 class nRPTDialog;
 class nWrappedVariantMap;

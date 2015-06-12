@@ -3,7 +3,7 @@
 
 #include <QThread>
 #include "nRPTTask.h"
-#include "nRPTTaskLIst.h"
+#include "nRPTTaskList.h"
 
 class nWrappedVariantMap;
 

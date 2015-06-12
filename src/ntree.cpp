@@ -1,13 +1,13 @@
-#include "nResourceProcessorTool.h"
+#include "ntree.h"
 #include "nRPTDialog.h"
 
-nResourceProcessorTool::nResourceProcessorTool(QObject *parent) :
+nTree::nTree(QObject *parent) :
     QObject(parent)
 {
 }
 
 #include <QApplication>
-int nResourceProcessorTool::run(QString srcDir, QString dstDir, bool automatic)
+int nTree::run(QString srcDir, QString dstDir, bool automatic)
 {
     nRPTDialog dialog(srcDir, dstDir, automatic);
     dialog.show();

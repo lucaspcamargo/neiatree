@@ -1,11 +1,10 @@
-#include "ntreemain.h"
+#include "ntree.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    nTreeMain w;
-    w.show();
+    nTree tool;
 
-    return a.exec();
+    return tool.run("src", "dst", false);
 }
