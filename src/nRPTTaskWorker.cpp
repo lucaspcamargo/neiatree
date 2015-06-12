@@ -6,7 +6,7 @@
 #include <QFileInfo>
 #include <QProcess>
 #include <QProcessEnvironment>
-#include "../nWrappedVariantMap.h"
+#include "nWrappedVariantMap.h"
 
 #include <iostream>
 

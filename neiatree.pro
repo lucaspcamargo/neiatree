@@ -12,7 +12,8 @@ SOURCES += src/main.cpp \
     src/nRPTRulesFile.cpp \
     src/nRPTTaskList.cpp \
     src/nRPTTaskWorker.cpp \
-    src/nRPTWorker.cpp
+    src/nRPTWorker.cpp \
+    src/nWrappedVariantMap.cpp
 
 FORMS += \
     src/nRPTDialog.ui
@@ -24,4 +25,6 @@ HEADERS += \
     src/nRPTTask.h \
     src/nRPTTaskList.h \
     src/nRPTTaskWorker.h \
-    src/nRPTWorker.h
+    src/nRPTWorker.h \
+    util/nIODefines.h \
+    src/nWrappedVariantMap.h

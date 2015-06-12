@@ -4,9 +4,10 @@
 #include <QVariantMap>
 #include <QObject>
 
-/* This is a special utility used to store QVariantMaps in files,
-   in a manner uniform to the whole framework. Not all fields might be used.
-   */
+/**
+ * This is a special utility used to store QVariantMaps in files,
+ * in a manner uniform to the whole framework. Not all fields might be used.
+ */
 
 class nWrappedVariantMap : public QObject
 {

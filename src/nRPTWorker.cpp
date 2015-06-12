@@ -4,7 +4,7 @@
 #include <QDir>
 #include <QFile>
 #include <QRegExp>
-#include "../nWrappedVariantMap.h"
+#include "nWrappedVariantMap.h"
 #include "nRPTTaskWorker.h"
 
 nRPTWorker::nRPTWorker(QString srcDir, QString dstDir, int numThreads, nRPTDialog *parent) :
