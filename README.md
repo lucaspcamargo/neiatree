@@ -1,9 +1,17 @@
 # neiatree
 neiatree is an asset tree processing tool for games. Requires Qt 5.4. Change util/nIODefines.h for lower Qt versions.
 
+It has simple support for running jobs in parallel, the number of worker threads is definable the gui. The default is four threads.
+
+## Usage
+
+This tool works by adding RPT_RULES files in the directories of the source tree. In the spirit of Makefiles, these files describe how to process the source tree it into the destination tree.
+
+Right now the default is to process the "assets-src" dir in the current path into an "assets" directory, also in the current path. Support for command-line arguments coming soon.
+
 ## RPT_RULES format
 
-First of all, an example is available at docs/Example RPT_RULES. But first, read this.
+An example is available at docs/Example RPT_RULES. But first, read this.
 
 Basic format is:
 
