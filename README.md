@@ -1,4 +1,7 @@
 # neiatree
+
+![Screenshot](https://raw.githubusercontent.com/lucaspcamargo/neiatree/master/doc/markdown/screenshot.png)
+
 neiatree is an asset tree processing tool for games. Requires Qt 5.4. Change util/nIODefines.h for lower Qt versions.
 
 It has simple support for running jobs in parallel, the number of worker threads is definable the gui. The default is four threads.
