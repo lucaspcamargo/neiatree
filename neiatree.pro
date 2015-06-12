@@ -1,9 +1,3 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2015-06-12T11:39:42
-#
-#-------------------------------------------------
-
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -12,9 +6,22 @@ TARGET = neiatree
 TEMPLATE = app
 
 
-SOURCES += src/main.cpp\
-        src/ntreemain.cpp
+SOURCES += src/main.cpp \
+    src/nResourceProcessorTool.cpp \
+    src/nRPTDialog.cpp \
+    src/nRPTRulesFile.cpp \
+    src/nRPTTaskLIst.cpp \
+    src/nRPTTaskWorker.cpp \
+    src/nRPTWorker.cpp
 
-HEADERS  += src/ntreemain.h
+FORMS += \
+    src/nRPTDialog.ui
 
-FORMS    += src/ntreemain.ui
+HEADERS += \
+    src/nResourceProcessorTool.h \
+    src/nRPTDialog.h \
+    src/nRPTRulesFile.h \
+    src/nRPTTask.h \
+    src/nRPTTaskLIst.h \
+    src/nRPTTaskWorker.h \
+    src/nRPTWorker.h
