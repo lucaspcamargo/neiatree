@@ -117,7 +117,7 @@ void nRPTWorker::processDirectory(QString dir)
 
     if(!entries.contains("RPT_RULES"))
     {
-        emit appendOutput(QString("Directory [%1] has no rules :o OMFG").arg(dir));
+        emit appendOutput(QString("Directory [%1] has no rules :(").arg(dir));
         return;
     }
 
